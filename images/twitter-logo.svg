@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<g>
-	<g>
-		<path fill="#FFFFFF" d="M512.001,97.275c-18.845,8.352-39.064,14.016-60.311,16.545c21.693-12.993,38.298-33.603,46.168-58.085
-			c-20.348,12.033-42.808,20.77-66.739,25.507c-19.164-20.45-46.425-33.187-76.658-33.187c-58.005,0-105.037,47.043-105.037,105.032
-			c0,8.224,0.928,16.257,2.72,23.938c-87.28-4.385-164.672-46.211-216.471-109.77c-9.054,15.49-14.205,33.539-14.205,52.805
-			c0,36.451,18.557,68.613,46.712,87.43c-17.213-0.576-33.403-5.313-47.576-13.185v1.313c0,50.883,36.217,93.351,84.24,103.017
-			c-8.799,2.367-18.077,3.68-27.674,3.68c-6.783,0-13.342-0.671-19.772-1.953c13.373,41.765,52.15,72.135,98.094,72.967
-			c-35.93,28.162-81.234,44.899-130.44,44.899c-8.479,0-16.829-0.512-25.051-1.439c46.487,29.858,101.677,47.267,160.994,47.267
-			c193.211,0,298.825-160.076,298.825-298.902l-0.353-13.601C480.103,136.83,497.955,118.333,512.001,97.275z"/>
-	</g>
-</g>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="50" height="50" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_108_164" transform="scale(0.02)"/>
+</pattern>
+<image id="image0_108_164" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABLFBMVEUAzP8h0/9b3v++8v995f9l4P8k0//p+//+//+k7f9A2f8j0/9L2/8Fzf8Oz//Z9//////v/P/T9v+U6v8n1P/s+/+N6P8g0v+V6v/4/v9p4f+58f/8/v+q7v821/8r1f9g3/8V0P/S9v+98v/2/f8v1f+P6f+Z6/8Nz//1/f9F2v/P9f965P/I9P+d6/+h7P9n4f/k+v9I2v8Hzf/E8//t+//Q9v9t4v+I5/+b6/945P8z1v841/+K6P/u/P8Ezf9H2v/7/v+L6P9U3f/w/P+s7v9i4P9B2f9E2v8Qz/+O6P9w4v+/8v9k4P8y1v8i0/8o1P9O3P+Q6f8BzP9X3f/3/f9r4f/A8v/G9P8t1f9R3P/F8/8u1f9z4/+p7v/j+f/6/v/n+v+W6v8d0v8ZDTd2AAAAAWJLR0QQlbINLAAAAAd0SU1FB+YCFwoyF9jzOhkAAAEPSURBVEjHY2AYBaNg2ANGJmYWVpJ0sLFzsHNyEVDEzcOL4PDxCwgICgmLEDBXQFRMHMaREAADSSn8eqQFBGRk5cBMeRmIFgEOBbxaFJVAipRBmjgFYECFG58WVTVJsMHqGnyacC0C6vi0aMFUaesgdAiw43WZhAA2oKunb4BbD48uFi2GEka4dRibYLXG1Mwctx4LbDosrazx+cbGVgldh509/thkcHBE1+JEQAeDMweaDhdFXB6Hs+RdUbW44TLc3QPK8BRDtcYLt4O8fXz9/AMCJUxR7QgKxuOJkFDM4JUMw+9xkXB0HRGRhAIrOCoaST0Hc2AwIR0gEBMbpx2vkpCom+SWTIz6UTAKhioAAJymKMkzBgEgAAAAAElFTkSuQmCC"/>
+</defs>
 </svg>
