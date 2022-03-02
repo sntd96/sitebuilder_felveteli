@@ -6,11 +6,9 @@ body {
 }
 
 
-
-
-
 header {
     background-image: url(images/topimage.svg);
+    background-position: center;
     width: 100%;
     height: 580px;
     background-repeat: no-repeat;
@@ -36,8 +34,8 @@ nav {
    align-items: center;
 }
 
-.logo {
-    padding-left: 8px;
+.mob-navbar {
+    display: none;
 }
 
 .navbar {
@@ -137,18 +135,19 @@ h1 {
 
 
 
-
-
 main {
     margin: 0px;
+    width: 100%;
+    background-color: white;
 }
 
 .introduction {
-    width: 100%;
     min-height: 100%;
-    background-color: white;
     display: flex;
     justify-content: center;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .introduction a {
@@ -239,9 +238,10 @@ li {
 
 
 .partners {
-    width: 100%;
+    width: 1120px;
     min-height: 100%;
-    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .partners h2 {
@@ -250,12 +250,6 @@ li {
     margin: 0px;
 }
 
-.insidebox {
-    width: 1120px;
-    min-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .partnerboxes {
     display: flex;
@@ -278,7 +272,6 @@ li {
 
 footer {
     background-color: #2D333D;
-    min-height: 100%;
     width: 100%;
     display: block;
 }
@@ -307,8 +300,10 @@ footer p {
 
 .footer1 {
     display: flex;
-    justify-content: center;
     height: 100%;
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .fbox1 {
@@ -351,9 +346,61 @@ input[type=text], input[type=email], textarea {
     border: 1px solid #020203;
 }
 
-.inputwrapper {
+.inputwrapper_name {
     padding-top: 30px;
+    color: white;
 }
+
+.inputwrapper_email {
+    padding-top: 30px;
+    color: white;
+}
+
+.inputwrapper_message {
+    padding-top: 30px;
+    color: white;
+}
+
+.label_name {
+    color: white;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+}
+
+.label_email {
+    color: white;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+}
+.label_message {
+    color: white;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+}
+
+
+textarea {
+    height: 143px;
+    resize: none;
+}
+
+.counter{
+    color: white;
+    padding-top: 12px;
+    padding-left: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
 
 .sendbutton {
     background-color: #0093D8;
@@ -393,10 +440,65 @@ input[type=text], input[type=email], textarea {
 
 
 
-/*Tablet*/
-@media (max-width: 1366px) {
 
+
+
+/*Tablet*/
+@media (max-width: 1440px) {
+
+    .navbox {
+        width: 80%;
+    }
+         
+    .topboxsupport {
+        width: 80%;
+    }
+    
+    .introduction {
+        width: 80%;
+        min-height: 100%;
+    }
+    
+    .intro1 {
+        max-width: 545px;
+    }
+      
+    .intro2 {
+        max-width: 545px;
+    }
+
+    .partners {
+        width: 80%;
+    }
+     
+    .footer1 {
+        width: 80%;
+    }
+    
+    .fbox1 {
+        width: 45%;
+        padding-right: 10%;
+    }
+     
+    .fbox2 {
+        width: 55%;
+    }
+    
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+    }
+         
+    .footer2 {
+        width: 80%;
+    }
+    
 }
+
+
+
+
+
+
 
 
 
@@ -404,20 +506,60 @@ input[type=text], input[type=email], textarea {
 /*Mobile*/
 @media (max-width: 768px) {
 
-    .navbox {
-        width: 420px;
+    nav {
         height: 100px;
+    }
+
+    .navbox {
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo {
+        padding-left: 30px;
     }
 
     .navbar {
         display: none;
     }
 
+    .mob-navbar {
+        display: block;
+        padding: 33px 30px;
+        background-color: #0093D8;
+    }
+
+    .mob-dropdown {
+        display: none;
+        position: absolute;
+        margin: 0px;
+    }
+
+    .mobbutton1 {
+        display: block;
+        background-color: #0093D8;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mobbutton2 {
+        display: block;
+        background-color: #007BB5;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .nav {
         height: 100px;
     }
-
-
 
     .topboxsupport {
         width: 420px;
@@ -430,15 +572,12 @@ input[type=text], input[type=email], textarea {
         min-height: 204px;
     }
 
-
-
-
     .introduction {
         display: block;
+        width: 100%;
     }
     
     .intro1 {
-        padding-top: 60px;
         width: 420px;
         margin-left: auto;
         margin-right: auto;
@@ -446,9 +585,7 @@ input[type=text], input[type=email], textarea {
     }
     
     .intro1 img {
-        float: right;
         margin-left: 23px;
-        margin-bottom: 15px;
     }
         
     .intro2 {
@@ -458,33 +595,25 @@ input[type=text], input[type=email], textarea {
         margin-right: auto;
     }
     
-
-
-    
-    .insidebox {
+    .partners {
         width: 420px;
     }
-    
+
     .partnerboxes {
         display: block;
         padding-bottom: 75px;
     }
-    
+
     .pbox {
         height: 290px;
         width: 290px;
         margin-right: auto;
         margin-left: auto;
     }
-
-
-
-
        
     .footer1 {
         display: block;
         justify-content: center;
-        height: 100%;
         width: 420px;
         margin-left: auto;
         margin-right: auto;
@@ -492,7 +621,6 @@ input[type=text], input[type=email], textarea {
     
     .fbox1 {
         width: 420px;
-        height: 100%;
         padding-right: 0px;
     }
     
@@ -502,7 +630,6 @@ input[type=text], input[type=email], textarea {
           
     .fbox2 {
         width: 420px;
-        height: 100%;
     }
          
     .footer2 {
@@ -511,7 +638,6 @@ input[type=text], input[type=email], textarea {
 
     input[type=text], input[type=email], textarea {
         width: 420px;
-        height: 50px;
     }
     
 
