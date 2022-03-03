@@ -11,55 +11,60 @@
     }
 
     /*label moving from text inputs*/
-    window.onload = function showlabel()
+    window.onload = function callsunctions()
+    {
+        showlabel();
+        AutoShowSlides();
+    }
+    function showlabel()
     {
         var labelid;
         labelid = document.getElementById('email');
 
         labelid.addEventListener('focus', (event) => {
         document.getElementById('label_email').style.display = "block";
-        document.getElementById('inputwrapper_email').style.paddingTop = "6px";
+        document.getElementById('inputwrapper_email').style.paddingTop = "7px";
         if(document.getElementById('email').value==="")
         {
-            document.getElementById('email').style.color = "transparent";
+            document.getElementById('email').setAttribute("placeholder","");
         }
         });
         labelid.addEventListener('blur', (event) => {
         document.getElementById('label_email').style.display = "none";
         document.getElementById('inputwrapper_email').style.paddingTop = "30px";
-        document.getElementById('email').style.color = "white";
+        document.getElementById('email').setAttribute("placeholder","E-mail");
         });
 
         labelid = document.getElementById('name');
 
         labelid.addEventListener('focus', (event) => {
         document.getElementById('label_name').style.display = "block"
-        document.getElementById('inputwrapper_name').style.paddingTop = "6px";
+        document.getElementById('inputwrapper_name').style.paddingTop = "7px";
         if(document.getElementById('name').value==="")
         {
-            document.getElementById('name').style.color = "transparent";
+            document.getElementById('name').setAttribute("placeholder","");
         }
         });
         labelid.addEventListener('blur', (event) => {
         document.getElementById('label_name').style.display = "none"
         document.getElementById('inputwrapper_name').style.paddingTop = "30px";
-        document.getElementById('name').style.color = "white";
+        document.getElementById('name').setAttribute("placeholder","Name");
         });
 
         labelid = document.getElementById('message');
 
         labelid.addEventListener('focus', (event) => {
         document.getElementById('label_message').style.display = "block"
-        document.getElementById('inputwrapper_message').style.paddingTop = "6px";
+        document.getElementById('inputwrapper_message').style.paddingTop = "7px";
         if(document.getElementById('message').value==="")
         {
-            document.getElementById('message').style.color = "transparent";
+            document.getElementById('message').setAttribute("placeholder","");
         }
         });
         labelid.addEventListener('blur', (event) => {
         document.getElementById('label_message').style.display = "none"
         document.getElementById('inputwrapper_message').style.paddingTop = "30px";
-        document.getElementById('message').style.color = "white";
+        document.getElementById('message').setAttribute("placeholder","Message");
         });
     }
 
@@ -134,7 +139,6 @@
     var slideIndex = 0;
 
     /*automatically change slides*/
-    window.onload = AutoShowSlides();
     function AutoShowSlides() {
     var i;
     var slides = document.getElementsByClassName("topbox");
