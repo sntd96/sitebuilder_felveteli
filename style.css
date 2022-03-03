@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    margin: 0%;
+    margin: 0px;
     background-color: gray;
     height: 100%;
 }
@@ -43,7 +43,7 @@ nav {
 }
 
 .navbutton {
-    padding: 29.5px 14px;
+    padding: 29px 14px;
     margin-left: 30px;
     position: relative;
 }
@@ -125,8 +125,8 @@ h1 {
 .dropdown .navbutton {
     width: 110px;
     background-color: #0093D8;
-    margin-top: 1px;
     margin-left: -14px;
+    border-top: 1px solid white;
 }
 
 .dropdown .navbutton:hover {
@@ -168,7 +168,8 @@ main {
     padding-right: 30px;
 }
 
-.intro1 img {
+.square img {
+    width: 50%;
     float: right;
     margin-left: 29px;
     margin-bottom: 15px;
@@ -462,7 +463,7 @@ textarea {
     .intro1 {
         max-width: 545px;
     }
-      
+     
     .intro2 {
         max-width: 545px;
     }
@@ -498,25 +499,15 @@ textarea {
 
 
 
-
-
-
-
-
-/*Mobile*/
 @media (max-width: 768px) {
-
+    
     nav {
         height: 100px;
     }
 
     .navbox {
-        width: 100%;
+        width: 420px;
         height: 100px;
-    }
-
-    .logo {
-        padding-left: 30px;
     }
 
     .navbar {
@@ -526,13 +517,17 @@ textarea {
     .mob-navbar {
         display: block;
         padding: 33px 30px;
-        background-color: #0093D8;
+        background-color: none;
+        margin: 0;
+        font: inherit;
     }
 
     .mob-dropdown {
         display: none;
         position: absolute;
-        margin: 0px;
+        margin-top: 32px;
+        width: 100%;
+        left: 0;
     }
 
     .mobbutton1 {
@@ -544,6 +539,9 @@ textarea {
         padding-left: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
+        width: 100%;
+        text-decoration: none;
+        border-top: 1px solid white;
     }
 
     .mobbutton2 {
@@ -555,6 +553,9 @@ textarea {
         padding-left: 80px;
         padding-top: 30px;
         padding-bottom: 30px;
+        width: 100%;
+        text-decoration: none;
+        border-top: 1px solid white;
     }
 
     .nav {
@@ -568,8 +569,7 @@ textarea {
     }
     
     .topbox {
-        max-width: 420px;
-        min-height: 204px;
+        width: 100%;
     }
 
     .introduction {
@@ -621,7 +621,9 @@ textarea {
     
     .fbox1 {
         width: 420px;
-        padding-right: 0px;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .iconbox {
@@ -630,6 +632,8 @@ textarea {
           
     .fbox2 {
         width: 420px;
+        margin-left: auto;
+        margin-right: auto;
     }
          
     .footer2 {
@@ -639,9 +643,167 @@ textarea {
     input[type=text], input[type=email], textarea {
         width: 420px;
     }
-    
+}
 
+
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 480px) {
+
+    nav {
+        height: 100px;
+    }
+
+    .navbox {
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo {
+        padding-left: 6.25%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mob-navbar {
+        display: block;
+        padding: 33px 30px;
+        background-color: none;
+        margin: 0;
+        font: inherit;
+    }
+
+    .mob-dropdown {
+        display: none;
+        position: absolute;
+        margin-top: 32px;
+        width: 100%;
+        left: 0;
+    }
+
+    .mobbutton1 {
+        display: block;
+        background-color: #0093D8;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-decoration: none;
+        border-top: 1px solid white;
+    }
+
+    .mobbutton2 {
+        display: block;
+        background-color: #007BB5;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-decoration: none;
+        border-top: 1px solid white;
+    }
+
+    .nav {
+        height: 100px;
+    }
+
+    .topboxsupport {
+        width: 87.5%;
+        min-height: 204px;
+        padding-top: 55%;
+    }
+    
+    .topbox {
+        width: 100%;
+        min-height: 204px;
+    }
+
+    .introduction {
+        display: block;
+        width: 100%;
+    }
+    
+    .intro1 {
+        width: 87.5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0px;
+    }
+    
+    .intro1 img {
+        margin-left: 23px;
+    }
+        
+    .intro2 {
+        padding-top: 75px;
+        width: 87.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .partners {
+        width: 87.5%;
+    }
+
+    .partnerboxes {
+        display: block;
+        padding-bottom: 75px;
+    }
+
+    .pbox {
+        height: 290px;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+       
+    .footer1 {
+        display: block;
+        justify-content: center;
+        width: 87.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .fbox1 {
+        width: 100%;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .iconbox {
+        padding-bottom: 47px;
+    }
+          
+    .fbox2 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+         
+    .footer2 {
+        width: 87.5%;
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+    }
 
 }
+
+
 
 

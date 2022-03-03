@@ -95,6 +95,14 @@
 
     $(document).ready(function () {
         $('.burgermenu').on('click', function () {
+            if(document.getElementById('mob-navbar').style.backgroundColor === '')
+            {
+                document.getElementById('mob-navbar').style.backgroundColor = '#0093D8';
+            }
+            else
+            {
+                document.getElementById('mob-navbar').style.backgroundColor = '';
+            }
             $('.mob-dropdown').toggle();
         })
     });
