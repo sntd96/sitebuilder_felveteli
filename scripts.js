@@ -1,3 +1,4 @@
+    /*char counter field update*/
     function textCounter(field) {
         if (field.value.length > 200) 
         {
@@ -9,7 +10,7 @@
         }
     }
 
-
+    /*label moving from text inputs*/
     window.onload = function showlabel()
     {
         var labelid;
@@ -62,7 +63,7 @@
         });
     }
 
-
+    /*label removal from text inputs*/
     function checkemailcolor()
     {
         if(document.getElementById('email').value==="")
@@ -93,6 +94,7 @@
         document.getElementById('message').style.color = "white";
     }
 
+    /*burgermenu*/
     $(document).ready(function () {
         $('.burgermenu').on('click', function () {
             if(document.getElementById('mob-navbar').style.backgroundColor === '')
@@ -106,5 +108,47 @@
             $('.mob-dropdown').toggle();
         })
     });
+
+    /*change slides 1-by-1*/
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) 
+    {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("topbox");
+    var dots = document.getElementsByClassName("rectangle");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) 
+    {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    var slideIndex = 0;
+
+    /*automatically change slides*/
+    window.onload = AutoShowSlides();
+    function AutoShowSlides() {
+    var i;
+    var slides = document.getElementsByClassName("topbox");
+    var dots = document.getElementsByClassName("rectangle");
+    for (i = 0; i < slides.length; i++) 
+    {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(AutoShowSlides, 2000); // Change image every 2 seconds
+    }
+        
 
 
