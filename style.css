@@ -5,7 +5,6 @@ body {
     height: 100%;
 }
 
-
 header {
     background-image: url(images/topimage.svg);
     background-position: center;
@@ -60,7 +59,6 @@ nav {
     text-decoration: none;
     letter-spacing: 0.03em;
 }
-
 
 .topboxsupport {
     width: 1120px;
@@ -132,8 +130,6 @@ h1 {
 .dropdown .navbutton:hover {
     background-color: #007BB5;
 }
-
-
 
 main {
     margin: 0px;
@@ -232,12 +228,6 @@ li {
     text-align: right;
 }
 
-
-
-
-
-
-
 .partners {
     width: 1120px;
     min-height: 100%;
@@ -250,7 +240,6 @@ li {
     padding-bottom: 32px;
     margin: 0px;
 }
-
 
 .partnerboxes {
     display: flex;
@@ -265,11 +254,6 @@ li {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
 
 footer {
     background-color: #2D333D;
@@ -379,6 +363,7 @@ input[type=text], input[type=email], textarea {
     padding-left: 19px;
     padding-bottom: 4px;
 }
+
 .label_message {
     color: white;
     display: none;
@@ -387,7 +372,6 @@ input[type=text], input[type=email], textarea {
     padding-left: 19px;
     padding-bottom: 4px;
 }
-
 
 textarea {
     height: 143px;
@@ -401,7 +385,6 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
-
 
 .sendbutton {
     background-color: #0093D8;
@@ -433,6 +416,7 @@ textarea {
 
 .footer2 p {
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 
@@ -654,144 +638,45 @@ textarea {
 /*Mobile*/
 @media (max-width: 480px) {
 
-    nav {
-        height: 100px;
-    }
-
     .navbox {
         width: 100%;
-        height: 100px;
     }
 
     .logo {
         padding-left: 6.25%;
     }
 
-    .navbar {
-        display: none;
-    }
-
-    .mob-navbar {
-        display: block;
-        padding: 33px 30px;
-        background-color: none;
-        margin: 0;
-        font: inherit;
-    }
-
-    .mob-dropdown {
-        display: none;
-        position: absolute;
-        margin-top: 32px;
-        width: 100%;
-        left: 0;
-    }
-
-    .mobbutton1 {
-        display: block;
-        background-color: #0093D8;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 100%;
-        text-decoration: none;
-        border-top: 1px solid white;
-    }
-
-    .mobbutton2 {
-        display: block;
-        background-color: #007BB5;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        padding-left: 80px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 100%;
-        text-decoration: none;
-        border-top: 1px solid white;
-    }
-
-    .nav {
-        height: 100px;
-    }
-
     .topboxsupport {
         width: 87.5%;
-        min-height: 204px;
         padding-top: 55%;
-    }
-    
-    .topbox {
-        width: 100%;
-        min-height: 204px;
-    }
-
-    .introduction {
-        display: block;
-        width: 100%;
     }
     
     .intro1 {
         width: 87.5%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 0px;
-    }
-    
-    .intro1 img {
-        margin-left: 23px;
     }
         
     .intro2 {
-        padding-top: 75px;
         width: 87.5%;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     .partners {
         width: 87.5%;
     }
 
-    .partnerboxes {
-        display: block;
-        padding-bottom: 75px;
-    }
-
     .pbox {
-        height: 290px;
         width: 70%;
-        margin-right: auto;
-        margin-left: auto;
     }
        
     .footer1 {
-        display: block;
-        justify-content: center;
         width: 87.5%;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     .fbox1 {
         width: 100%;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .iconbox {
-        padding-bottom: 47px;
     }
           
     .fbox2 {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
          
     .footer2 {
